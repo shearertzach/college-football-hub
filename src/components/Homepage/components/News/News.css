@@ -1,0 +1,21 @@
+.newsContainer {
+    width: 50%;
+}
+
+.newsCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newsCard img {
+    width: 30%;
+}
+
+.newsMain {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+}

@@ -1,0 +1,5 @@
+.HeadContainer {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
