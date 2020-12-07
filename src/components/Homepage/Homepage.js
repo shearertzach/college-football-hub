@@ -40,7 +40,7 @@ class Homepage extends Component {
 
     async getNews() {
         try {
-            const responce = await fetch('http://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/news')
+            const responce = await fetch('http://site.api.espn.com/apis/site/v2/sports/football/college-football/news')
             const json = await responce.json()
             this.setState({
                 news: json,
@@ -57,7 +57,7 @@ class Homepage extends Component {
     render() {
         if (this.state.error) {
             return <h1>{this.state.error}</h1>
-        } else if (!this.state.isLoaded) {
+        } else if (!this.state.isLoaded || !this.state.news || !this.state.scores) {
             return <h1>Loading...</h1>
         } else {
             return (

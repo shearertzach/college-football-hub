@@ -30,30 +30,35 @@ class Navbar extends Component {
     render() {
         return (
             <div className={'Navbar ' + this.state.navStyle}>
-                <NavLink
-                    className={'navLink '}
-                    activeClassName={'navLink-active '}
-                    exact
-                    to='/'
-                >
-                    Home
-                </NavLink>
-                <NavLink
-                    className={'navLink '}
-                    activeClassName={'navLink-active '}
-                    exact
-                    to='/games'
-                >
-                    Games
-                </NavLink>
-                <NavLink
-                    className={'navLink '}
-                    activeClassName={'navLink-active '}
-                    exact
-                    to='/teams'
-                >
-                    Teams
-                </NavLink>
+                {/* <img height='35px' src={`${process.env.PUBLIC_URL}/navLogo.png`} alt='navLogo' /> */}
+                {/* <p>College Football Hub</p> */}
+                <div>
+                    <NavLink
+                        className={'navLink '}
+                        activeClassName={'navLink-active '}
+                        exact
+                        to='/'
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        className={'navLink '}
+                        activeClassName={'navLink-active '}
+                        exact
+                        to='/games'
+                    >
+                        Games
+                    </NavLink>
+                    <NavLink
+                        className={'navLink '}
+                        activeClassName={'navLink-active '}
+                        exact
+                        to='/teams'
+                    >
+                        Teams
+                    </NavLink>
+                </div>
+
             </div>
         )
     }

@@ -2,6 +2,13 @@
     width: 50%;
 }
 
+@media only screen and (max-width: 1168px) {
+    .newsContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 .newsCard {
     width: 100%;
     display: flex;
@@ -9,8 +16,12 @@
     margin-top: 20px;
 }
 
-.newsCard img {
+.newsImg {
     width: 30%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.466);
 }
 
 .newsMain {
@@ -18,4 +29,5 @@
     flex-direction: column;
     text-align: left;
     margin-left: 20px;
+    width: 70%;
 }

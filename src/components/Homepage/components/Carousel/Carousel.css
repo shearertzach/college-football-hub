@@ -1,7 +1,27 @@
+.CarouselHome {
+    margin: 25px;
+}
+
 .carousel-item {
-    max-height: 60vh;
+    max-height: 65vh;
 }
 
 .carousel-item img {
     width: 100%;
+}
+
+.carouItem {
+    display: none;
+    height: 65vh;
+    width: 100%;
+    background-size: cover;
+    transition: transform .6s ease-in-out;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    position: relative;
+    float: left;
+}
+
+.carouItem.active {
+    display: block;
 }

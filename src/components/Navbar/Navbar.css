@@ -1,11 +1,17 @@
 .Navbar {
     width: 100vw;
-    padding: 10px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 15px;
     align-items: center;
     z-index: 100;
     background-color: rgb(41, 41, 41);
+}
+
+.Navbar p {
+    margin-bottom: 0;
+    color: white;
+    font-size: 23px;
 }
 
 .navLink {

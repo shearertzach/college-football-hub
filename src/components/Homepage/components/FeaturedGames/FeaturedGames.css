@@ -1,13 +1,24 @@
-.FeaturedGames {
+/* .FeaturedGames {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
+} */
+
+.FeaturedGames {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-gap: 1em;
+    padding: 25px;
+    width: 50%;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1168px) {
     .FeaturedGames {
         width: 100%;
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 10px;
     }
 }
 
@@ -17,8 +28,7 @@
     border-radius: 10px;
     margin: 5px;
     padding: 0 15px;
-    width: 200px;
-    height: 100px;
+    padding-top: 10px;
 }
 
 .GameCard img {
@@ -40,6 +50,22 @@
 
 .TeamContainer {
     display: flex;
-    margin: 10px 0;
+    margin: 0;
+    margin-bottom: 10px;
     align-items: center;
+}
+
+.liveContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: rgb(255, 80, 80);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
 }
