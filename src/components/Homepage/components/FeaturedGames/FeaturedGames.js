@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
+import PropagateLoader from "react-spinners/ClipLoader";
 import './FeaturedGames.css'
 
 class FeaturedGames extends Component {
@@ -42,7 +43,7 @@ class FeaturedGames extends Component {
                 } else if (game.status.type.state === 'post') {
                     return (
                         <div className='liveContainer'>
-                            <b>Final</b>
+                            <b>{game.status.type.shortDetail}</b>
                         </div>
                     )
                 }
@@ -89,7 +90,11 @@ class FeaturedGames extends Component {
 
     render() {
         if (!this.props.games) {
-            return <h1>Loading...</h1>
+            return <PropagateLoader
+                size={150}
+                color={"#123abc"}
+                loading={!this.props.games}
+            />
         } else {
             console.log(this.props.games)
             return (

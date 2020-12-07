@@ -1,0 +1,45 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    max-width: 300px;
+    background-color: rgb(211, 211, 211);
+    top: 0;
+    transition: all 0.5s;
+    z-index: 100;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.sidebar a {
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border: none;
+}
+
+
+.open {
+    left: 0;
+}
+
+.closed {
+    left: -100%;
+}

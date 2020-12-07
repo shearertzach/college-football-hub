@@ -22,6 +22,10 @@
     transition: color 0.24s ease-in;
 }
 
+.navLinksContainer {
+    display: block;
+}
+
 .navLink:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -34,4 +38,34 @@
 
 .filled {
     background-color: black;
+}
+
+.sidebarButton {
+    display: none;
+    width: 40px;
+    height: 40px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebarButton div {
+    height: 1px;
+    width: 30px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 780px) {
+    .sidebarButton {
+        display: flex;
+    }
+
+    .navLinksContainer {
+        display: none;
+    }
 }
