@@ -51,9 +51,9 @@ class Navbar extends Component {
                         className={'navLink '}
                         activeClassName={'navLink-active '}
                         exact
-                        to='/games'
+                        to='/rankings'
                     >
-                        Games
+                        Rankings
                     </NavLink>
                     <NavLink
                         className={'navLink '}
